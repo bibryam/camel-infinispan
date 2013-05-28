@@ -9,7 +9,7 @@
 
 (The MIT License)
 
-Copyright (c) 2012 Bilgin Ibryam &lt;[ofbizian.com](ofbizian.com)&gt;
+Copyright (c) 2012 Bilgin Ibryam &lt;[ofbizian.com](http://ofbizian.com)&gt;
 
 Permission is hereby granted, free of charge, to any person obtaining
 a copy of this software and associated documentation files (the
