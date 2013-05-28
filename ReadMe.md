@@ -1,14 +1,14 @@
 # Camel-Infinispan Component (WIP)
 
-[Apache Camel](http://camel.apache.org/)
-[JBoss Infinispan](http://www.jboss.org/infinispan/)
+> [Apache Camel](http://camel.apache.org/)
+> [JBoss Infinispan](http://www.jboss.org/infinispan/)
 
 
 ## License
 
 (The MIT License)
 
-Copyright (c) 2012 Bilgin Ibryam &lt;ofbizian.com&gt;
+Copyright (c) 2012 Bilgin Ibryam &lt;[blog](ofbizian.com)&gt;
 
 Permission is hereby granted, free of charge, to any person obtaining
 a copy of this software and associated documentation files (the
