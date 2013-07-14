@@ -19,7 +19,7 @@ public class InfinispanSyncConsumerTest extends InfinispanTestSupport {
         mockResult.expectedMessageCount(2);
         mockResult.setMinimumResultWaitTime(900);
 
-        basicCacheContainer.getCache().put("keyOne", "valueOne");
+        currentCache().put(KEY_ONE, VALUE_ONE);
         mockResult.assertIsSatisfied();
     }
 

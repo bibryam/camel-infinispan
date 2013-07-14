@@ -15,7 +15,7 @@ public class InfinispanComponentTest extends InfinispanTestSupport {
         MockEndpoint mock = getMockEndpoint("mock:result");
         mock.expectedMinimumMessageCount(2);
 
-        basicCacheContainer.getCache().put("keyOne", "valueOne");
+        currentCache().put(KEY_ONE, VALUE_ONE);
         assertMockEndpointsSatisfied();
     }
 
@@ -24,13 +24,13 @@ public class InfinispanComponentTest extends InfinispanTestSupport {
         template.send("direct:start", new Processor() {
             @Override
             public void process(Exchange exchange) throws Exception {
-                exchange.getIn().setHeader(InfinispanConstants.KEY, "keyTwo");
-                exchange.getIn().setHeader(InfinispanConstants.VALUE, "valueTwo");
+                exchange.getIn().setHeader(InfinispanConstants.KEY, KEY_ONE);
+                exchange.getIn().setHeader(InfinispanConstants.VALUE, VALUE_ONE);
             }
         });
 
-        Object value = basicCacheContainer.getCache().get("keyTwo");
-        assertThat(value.toString(), is("valueTwo"));
+        Object value = currentCache().get(KEY_ONE);
+        assertThat(value.toString(), is(VALUE_ONE));
     }
 
     @Override

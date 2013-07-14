@@ -6,4 +6,10 @@ interface InfinispanConstants {
     String CACHE_NAME = "CamelInfinispanCacheName";
     String KEY = "CamelInfinispanKey";
     String VALUE = "CamelInfinispanValue";
+    String OPERATION = "CamelInfinispanOperation";
+    String PUT = "CamelInfinispanOperationPut";
+    String GET = "CamelInfinispanOperationGet";
+    String REMOVE = "CamelInfinispanOperationRemove";
+    String CLEAR = "CamelInfinispanOperationClear";
+    String RESULT = "CamelInfinispanOperationResult";
 }

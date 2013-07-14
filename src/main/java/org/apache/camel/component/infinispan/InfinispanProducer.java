@@ -20,11 +20,7 @@ public class InfinispanProducer extends DefaultProducer {
     }
 
     public void process(Exchange exchange) throws Exception {
-        Object key = exchange.getIn().getHeader(InfinispanConstants.KEY);
-        Object value = exchange.getIn().getHeader(InfinispanConstants.VALUE);
-
-        LOGGER.trace("Cache put [{}]: [{}]", key, value);
-        getCache(exchange).put(key, value);
+        new InfinispanOperation(getCache(exchange)).process(exchange);
     }
 
     @Override

@@ -17,14 +17,14 @@ public class InfinispanConsumerTest extends InfinispanTestSupport {
         mockResult.message(0).outHeader(InfinispanConstants.EVENT_TYPE).isEqualTo("CACHE_ENTRY_CREATED");
         mockResult.message(0).outHeader(InfinispanConstants.IS_PRE).isEqualTo(true);
         mockResult.message(0).outHeader(InfinispanConstants.CACHE_NAME).isNotNull();
-        mockResult.message(0).outHeader(InfinispanConstants.KEY).isEqualTo("keyOne");
+        mockResult.message(0).outHeader(InfinispanConstants.KEY).isEqualTo(KEY_ONE);
 
         mockResult.message(1).outHeader(InfinispanConstants.EVENT_TYPE).isEqualTo("CACHE_ENTRY_CREATED");
         mockResult.message(1).outHeader(InfinispanConstants.IS_PRE).isEqualTo(false);
         mockResult.message(1).outHeader(InfinispanConstants.CACHE_NAME).isNotNull();
-        mockResult.message(1).outHeader(InfinispanConstants.KEY).isEqualTo("keyOne");
+        mockResult.message(1).outHeader(InfinispanConstants.KEY).isEqualTo(KEY_ONE);
 
-        basicCacheContainer.getCache().put("keyOne", "valueOne");
+        currentCache().put(KEY_ONE, VALUE_ONE);
         mockResult.assertIsSatisfied();
     }
 
