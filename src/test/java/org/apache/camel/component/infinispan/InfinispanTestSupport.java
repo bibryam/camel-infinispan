@@ -2,8 +2,8 @@ package org.apache.camel.component.infinispan;
 
 import org.apache.camel.impl.JndiRegistry;
 import org.apache.camel.test.junit4.CamelTestSupport;
-import org.infinispan.api.BasicCache;
-import org.infinispan.api.BasicCacheContainer;
+import org.infinispan.commons.api.BasicCache;
+import org.infinispan.commons.api.BasicCacheContainer;
 import org.infinispan.manager.DefaultCacheManager;
 import org.junit.Before;
 

@@ -4,7 +4,7 @@ import java.util.Arrays;
 import java.util.HashSet;
 import java.util.Set;
 
-import org.infinispan.api.BasicCacheContainer;
+import org.infinispan.commons.api.BasicCacheContainer;
 
 public class InfinispanConfiguration {
     private BasicCacheContainer cacheContainer;

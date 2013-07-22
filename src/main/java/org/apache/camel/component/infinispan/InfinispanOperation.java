@@ -1,7 +1,8 @@
 package org.apache.camel.component.infinispan;
 
 import org.apache.camel.Exchange;
-import org.infinispan.api.BasicCache;
+import org.infinispan.commons.api.BasicCache;
+import org.infinispan.commons.api.BasicCacheContainer;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

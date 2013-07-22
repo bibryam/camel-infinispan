@@ -4,9 +4,6 @@ import org.apache.camel.Consumer;
 import org.apache.camel.Processor;
 import org.apache.camel.Producer;
 import org.apache.camel.impl.DefaultEndpoint;
-import org.infinispan.api.BasicCache;
-import org.infinispan.api.BasicCacheContainer;
-import org.infinispan.client.hotrod.RemoteCacheManager;
 
 public class InfinispanEndpoint extends DefaultEndpoint {
     private InfinispanConfiguration configuration;

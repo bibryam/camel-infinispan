@@ -2,8 +2,8 @@ package org.apache.camel.component.infinispan;
 
 import org.apache.camel.Exchange;
 import org.apache.camel.impl.DefaultProducer;
-import org.infinispan.api.BasicCache;
-import org.infinispan.api.BasicCacheContainer;
+import org.infinispan.commons.api.BasicCache;
+import org.infinispan.commons.api.BasicCacheContainer;
 import org.infinispan.client.hotrod.RemoteCacheManager;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
